@@ -1,0 +1,70 @@
+### git worktree list
+C:/לימודי תכנות שנה ב תשפה/GIT/ticketrush                       8cecf61 [main]
+C:/לימודי תכנות שנה ב תשפה/GIT/early-access                     c20427d [feature/early-access]
+C:/לימודי תכנות שנה ב תשפה/GIT/hotfix-price                     3978378 [hotfix/price]
+C:/לימודי תכנות שנה ב תשפה/GIT/noa-review                       f7e8785 (detached HEAD)
+C:/לימודי תכנות שנה ב תשפה/GIT/review-noa                       bbf330f [review/noa-refund]
+C:/לימודי תכנות שנה ב תשפה/GIT/waitlist                         6013188 [feature/waitlist]
+
+### git branch -a -vv
++ feature/early-access      c20427d (C:/לימודי תכנות שנה ב תשפה/GIT/early-access) feat: raise member ticket limit to six
++ feature/waitlist          6013188 (C:/לימודי תכנות שנה ב תשפה/GIT/waitlist) feat: add waitlist email handling
++ hotfix/price              3978378 (C:/לימודי תכנות שנה ב תשפה/GIT/hotfix-price) Revert "perf: faster price formatting"
+* main                      8cecf61 [origin/main: ahead 14] Merge branch 'feature/waitlist'
++ review/noa-refund         bbf330f (C:/לימודי תכנות שנה ב תשפה/GIT/review-noa) [origin/noa/refund: ahead 1] review: document refund fee calculation defect
+  remotes/origin/HEAD       -> origin/main
+  remotes/origin/dana/promo d4b1e35 test: add student discount tests
+  remotes/origin/main       6e5b25d feat: friendlier message for empty quantity
+  remotes/origin/noa/refund f7e8785 test: refund tests
+  remotes/origin/ruth/fixes fee9f58 wip: try new fonts
+
+### git log --graph --oneline --all -n 80
+*   8cecf61 (HEAD -> main, tag: v1.1) Merge branch 'feature/waitlist'
+|\  
+| * 6013188 (feature/waitlist) feat: add waitlist email handling
+* |   c6a5520 Merge branch 'feature/early-access'
+|\ \  
+| * | c20427d (feature/early-access) feat: raise member ticket limit to six
+| * |   9d95482 merge: combine student and member promotions
+| |\ \  
+| | * | d4b1e35 (origin/dana/promo) test: add student discount tests
+| | * | 0841085 feat: student discount (15%)
+* | | | 02fe3d9 security: untrack local payment config
+* | | | 58f5caa fix: correct concert date in events.js
+| |_|/  
+|/| |   
+* | | 8b2f260 Merge branch 'feature/early-access'
+|\| | 
+| * |   c07a734 Merge branch 'main' into feature/early-access
+| |\ \  
+| |/ /  
+|/| |   
+* | |   90c1a10 Merge branch 'hotfix/price'
+|\ \ \  
+| |_|/  
+|/| |   
+| * | 3978378 (hotfix/price) Revert "perf: faster price formatting"
+|/ /  
+| * 8b5a1b2 feat: add member early access pricing
+|/  
+| * bbf330f (review/noa-refund) review: document refund fee calculation defect
+| * f7e8785 (origin/noa/refund) test: refund tests
+| * 61bfedd feat: refund calculation for cancelled orders
+|/  
+| * fee9f58 (origin/ruth/fixes) wip: try new fonts
+| * 72063d7 debug: dump state to console
+| * 20cd6a9 WIP: try removing ticket limits
+| * 8284d98 fix: correct concert date in events.js
+| * 339324e WIP: new checkout flow (do not merge)
+|/  
+* 6e5b25d (origin/main, origin/HEAD) feat: friendlier message for empty quantity
+* 9119fe2 fix: typo in hero heading
+* a61f4ad feat: add footer with links
+* 73924c4 perf: faster price formatting
+* 03bd4dd docs: update artist lineup text
+* c44fbf8 feat: add early-access promo banner
+* 62f48b5 (tag: v1.0) feat: purchase page UI
+* f4c58bc feat: payment provider config
+* 2cc7e97 feat: event details data
+* 8a944f6 feat: ticket price calculation with tests
+* ed1b1e9 Initial commit: project skeleton and exercise tooling
